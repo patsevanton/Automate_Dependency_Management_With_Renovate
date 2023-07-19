@@ -1,6 +1,6 @@
 https://www.youtube.com/watch?v=5CkCr9U_Q1Y
 
-Meet Renovate - Your Update Automation Bot for Kubernetes and More!
+Введение
 Сколько вы времени каждую неделю тратите на поиск обновленных образов контейнеров для сервисов, запущенных в 
 вашем кластере Kubernetes. Всего 5 минут, 5 часов, никогда?
 
