@@ -45,7 +45,7 @@
   "extends": ["config:base"],
   "packageRules": [
     {
-      "updateTypes": ["patch"]
+      "matchUpdateTypes": ["patch"]
     }
   ]
 }
