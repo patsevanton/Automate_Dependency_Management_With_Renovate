@@ -69,19 +69,22 @@ RENOVATE_DISABLE: Вы можете установить эту переменн
 
 Пример .gitlab-ci.yml файла с интеграцией Renovate может выглядеть следующим образом:
 ```
-stages:
-  - renovate
+include:
+  - project: 'renovate-bot/renovate-runner'
+    file: '/templates/renovate.gitlab-ci.yml'
 
 renovate:
-  image: renovate/renovate:latest  # Используйте подходящий образ с Renovate
-  script:
-    - renovate --config renovate.json --token $RENOVATE_TOKEN  # Укажите путь до вашего конфига относительно корня проекта и токен
-  only:
-    - schedules  # Этот пайплайн будет запускаться только по расписанию
+  image: ${CI_RENOVATE_IMAGE}
+  variables:
+    RENOVATE_EXTRA_FLAGS: '$CI_PROJECT_PATH'
+  rules:
+    - if: '$RENOVATE_TOKEN == null || $RENOVATE_TOKEN == ""'
+      when: never
+    - if: '$CI_PIPELINE_SOURCE == "schedule"'
 ```
 
-Для настройки расписания выполнения этой задачи вы можете перейти в раздел "CI/CD -> Schedules" в вашем проекте в GitLab и создать расписание с использованием cron-синтаксиса.
-Запустите CI/CD пайплайн в GitLab. Проверьте статус pipeline
+Для настройки расписания выполнения этой задачи вы можете перейти в раздел "Pipeline schedules" в разделе "Pipeline" и создать расписание с использованием cron-синтаксиса.
+По умолчанию renovate не находит репозиторий, поэтому вам нужно указатть в переменной RENOVATE_EXTRA_FLAGS этот репозитой (переменная $CI_PROJECT_PATH).
 
 Глава III: Расширенные настройки работы Renovate
 Вот пример минимального renovate.json для автоматического слияния патч-версий:
