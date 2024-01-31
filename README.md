@@ -139,7 +139,7 @@ Dashboard в Renovate - это веб-панель управления в issue
 
 Пример дашборда:
 
-![](screenshots/Screenshot from 2024-01-31 11-29-24.jpg)
+![](screenshots/Dashboard.jpg)
 
 При выборе нужно MR можно его создать нажав на кнопку create merge request.
 
