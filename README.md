@@ -221,3 +221,16 @@ Dashboard в Renovate - это веб-панель управления в issue
 
 Все конфигурации представлены минимальными для упрощения понимания.
 Все конфигурации можно совмещать.
+
+Примеры репозиториев с removate:
+https://gitlab.com/anton_patsev/camptocamp-helm-common
+https://gitlab.com/anton_patsev/codecentric-helm-charts
+https://gitlab.com/anton_patsev/evryfs-helm-charts
+https://gitlab.com/anton_patsev/terragrunt-infrastructure-modules-example
+https://gitlab.com/anton_patsev/fire833-capstone
+https://gitlab.com/anton_patsev/Hamburg-Port-Authority-kubernetes-service-catalog
+https://gitlab.com/anton_patsev/billimek-k8s-gitops
+https://gitlab.com/anton_patsev/Alfresco-acs-deployment
+https://gitlab.com/anton_patsev/clemlesne-private-gpt
+https://gitlab.com/anton_patsev/grafana-helm-charts
+https://gitlab.com/anton_patsev/temporalio-helm-charts
