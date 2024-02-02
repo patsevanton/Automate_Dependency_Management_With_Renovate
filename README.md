@@ -94,16 +94,16 @@ renovate:
 Вот пример минимального renovate.json для автоматического слияния патч-версий:
 ```
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base"],
   "packageRules": [
     {
-      "updateTypes": ["patch"]
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true
     }
   ]
 }
 ```
-Этот файл renovate.json настраивает Renovate на автоматическое слияние обновлений только патч-версий (например, из 1.0.0 до 1.0.1) без изменения мажорной или минорной версии. 
+Этот файл renovate.json настраивает Renovate на автоматическое слияние обновлений только патч-версий (например, из 1.0.0 до 1.0.1) без изменения мажорной или минорной версии. automerge true мержит MR автоматически.
 
 По умолчанию Renovate поддерживает большое количество языков программирования, фреймворков. Для большинства разработчиков достаточно базовой настройки. Renovate сам определяет что *.tf относится к terraform, pyproject.toml и requirements.txt относится к python, package-lock.json относится к Javascript, Chart.yaml и values.yaml относится к helm, docker-compose.yml относится к docker, 
 
