@@ -27,6 +27,8 @@
 
 Глава II: Подключение renovatebot к GitLab
 
+Renovatebot можно подключить не только к публичным, но и к приватным Gitlab проектам.
+
 Чтобы подключить Renovate (https://github.com/renovatebot/renovate) к GitLab, вам понадобятся следующие шаги:
 
 Создание файла конфигурации в репозитории GitLab:
