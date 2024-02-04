@@ -106,6 +106,8 @@ Mожно выбрать обновление в dashboard его создать
 
 Для получения changelog лучше создать Github token и переменную окружения `GITHUB_COM_TOKEN`
 
+Для исправления предупреждения "GitHub token is required for some dependencies" обычно добавляют переменную окружения `GITHUB_COM_TOKEN` и все работает.
+
 Merge Request (Pull Request):
 
 Renovate автоматически создает MR, который включает в себя обновление зависимости до новой версии. Обычно выглядит так:
