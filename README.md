@@ -139,7 +139,7 @@ Renovate автоматически создает MR, который включ
 
 ![](screenshots/mr-short.jpg)
 
-# Глава V: Расширенная настройка Renovate
+# Глава V: Настройка типов файлов в renovate.json
 
 Настройка обновлений kubernetes манифестов (yaml)
 
