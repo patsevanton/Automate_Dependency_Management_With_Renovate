@@ -207,8 +207,14 @@ Renovate автоматически создает MR, который включ
 # Глава VI: Обновление уязвимостей
 
 Для обновления уязвимостей Renovatebot использует базы:
- * [Distributed vulnerability database for Open Source](https://osv.dev/) 
- * 
+ * [GitHub Advisory Database](https://github.com/github/advisory-database)
+ * [Go Vulnerability Database](https://github.com/golang/vulndb)
+ * [PyPI Advisory Database](https://github.com/pypa/advisory-database)
+ * [Rust Advisory Database](https://github.com/RustSec/advisory-db)
+ * [Vulnerability database for Open Source](https://osv.dev/vulnerability)
+
+Подробнее [здесь](https://github.com/patsevanton/renovate/blob/main/lib/workers/repository/process/vulnerabilities.ts#L553)
+
 Ниже представлен конфиг для обновления только уязвимостей без обычных обновлений.
 ```
 {
