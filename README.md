@@ -206,7 +206,7 @@ Renovate автоматически создает MR, который включ
 
 # Глава VI: Обновление уязвимостей
 
-Для обновления уязвимостей Renovatebot использует базы:
+Для проверки версий на уязвимости Renovatebot использует базы:
  * [GitHub Advisory Database](https://github.com/github/advisory-database)
  * [Go Vulnerability Database](https://github.com/golang/vulndb)
  * [PyPI Advisory Database](https://github.com/pypa/advisory-database)
