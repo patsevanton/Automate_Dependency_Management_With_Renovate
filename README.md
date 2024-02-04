@@ -106,9 +106,9 @@ Mожно выбрать обновление в dashboard его создать
 
 Для получения changelog лучше создать Github token и переменную окружения `GITHUB_COM_TOKEN`
 
-Для исправления предупреждения "GitHub token is required for some dependencies" обычно добавляют переменную окружения `GITHUB_COM_TOKEN` и все работает.
+Предупреждение "GitHub token is required for some dependencies" говорит что нужен доступ к GitHub Advisory Database. Примеры обновления уязвимостей в `Главе VI: Обновление уязвимостей`
 
-Merge Request (Pull Request):
+Merge Request:
 
 Renovate автоматически создает MR, который включает в себя обновление зависимости до новой версии. Обычно выглядит так:
 
@@ -231,6 +231,10 @@ Renovate автоматически создает MR, который включ
   "osvVulnerabilityAlerts": true
 }
 ```
+
+Пример Merge Request для закрытия уязвимостей:
+
+![](screenshots/mr-code.jpg)
 
 Все конфигурации представлены минимальными для упрощения понимания.
 Все конфигурации можно совмещать.
