@@ -236,5 +236,21 @@ Renovate автоматически создает MR, который включ
 
 ![](screenshots/mr-security.jpg)
 
+# Глава VI: Обновление уязвимостей и patch версий
+```
+{
+  "extends": [ "config:base"],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["patch"]
+    }
+  ],
+  "vulnerabilityAlerts": {
+    "enabled": true
+  },
+  "osvVulnerabilityAlerts": true
+}
+```
+
 Все конфигурации представлены минимальными для упрощения понимания.
 Все конфигурации можно совмещать.
